@@ -8,6 +8,7 @@ import jakarta.persistence.*;
 // 3. El atributo 'id' debe ser la llave primaria (@I...) y autogenerada (@G...)
 // 4. El atributo 'nombre' debe mapearse a una columna (@C...) y no debe permitir nulos (nullable = false).
 
+
 @Entity
 @Table(name = "hechizos")
 public class HechizoEntity {
@@ -26,7 +27,9 @@ public class HechizoEntity {
     private Integer nivelPoder;
     
     // Getters y Setters
-    public Long getId() { return id; }
+    public Long getId() { 
+        return id; 
+    }
     public void setId(Long id) { this.id = id; }
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
